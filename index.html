@@ -17,6 +17,7 @@ header{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
 h1{margin:0;font-size:30px;line-height:1.2}
 .sub{color:var(--muted);margin:6px 0 10px}
 .links{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:15px}
+h3{font-size:16px;margin:18px 0 4px}
 h2{font-size:19px;margin:44px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
 .item{margin:0 0 18px}
 .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -44,8 +45,16 @@ footer{margin-top:56px;color:var(--muted);font-size:13px}
 </header>
 
 <h2>About</h2>
-<p>I am a master's student in Computational Linguistics at the University of Tübingen, with a computer-science background from Harbin Institute of Technology. I build LLM agents and measure them carefully: my agent TheoClaw is used by real people, and every change to it is gated by an evaluation harness with repeated runs, fault injection, LLM-as-judge and bootstrap statistics. I also work on computer vision, for example in the RoboMaster robotics competition.</p>
-<div class="tags"><span>LLM agents</span><span>Evaluation of LLM systems</span><span>Retrieval-augmented generation</span><span>Computer vision</span><span>3D vision</span></div>
+<p>I am a master's student in Computational Linguistics at the University of Tübingen, trained in computer science at Harbin Institute of Technology. My work sits where <b>LLM agents</b> meet <b>computer vision</b>: I build systems that run in the real world, and the measurement that shows whether they actually work.</p>
+<p>I care about results that hold up outside the setting that produced them: an agent that still answers correctly when its tools fail, a detector that still works in the next match, a method that transfers to data it has never seen. My agent <a href="https://theoclaw.app">TheoClaw</a> is in daily use, and every change to it passes an evaluation harness with repeated runs (pass@k vs. pass^k), fault injection, bias-tested LLM judges and bootstrap non-inferiority tests; a compiled knowledge base raised its grounded statements from 67% to 92%. In robot vision, I replaced a hand-tuned detector with small learned models and raised recall on hand-labelled data from 40% to 82% at 95% precision.</p>
+<h3>Research interests</h3>
+<ul>
+<li><b>Reliable LLM agents</b>: evaluation, grounding, robustness to tool failures, and LLM-as-judge that can be trusted</li>
+<li><b>Agents that write and improve programs</b>, applied to vision and physical AI</li>
+<li><b>3D computer vision</b>: camera geometry, pose estimation, tracking and scene representations</li>
+<li><b>Evaluation methodology</b>: decisions from few, expensive trials with statistics fixed in advance</li>
+</ul>
+<p class="meta">I am open to research assistant (HiWi) and working-student positions in Tübingen and Stuttgart, and happy to talk about collaborations.</p>
 
 <h2>Education</h2>
 <div class="item"><div class="row"><b>M.A. Computational Linguistics</b><span class="date">2025 – expected 2028</span></div>
