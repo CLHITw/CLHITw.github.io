@@ -27,6 +27,8 @@ p{margin:6px 0}
 ul{margin:6px 0;padding-left:20px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .tags span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:14px}
+.copy{font:inherit;font-size:12.5px;padding:0 8px;margin-left:4px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);cursor:pointer}
+.links span{color:var(--muted)}
 footer{margin-top:56px;color:var(--muted);font-size:13px}
 </style>
 </head>
@@ -37,7 +39,7 @@ footer{margin-top:56px;color:var(--muted);font-size:13px}
     <h1>Lorenz (Qianzhao) Wang</h1>
     <div class="sub">M.A. student in Computational Linguistics · University of Tübingen</div>
     <div class="links">
-      <a href="mailto:qianzhao.wang@student.uni-tuebingen.de">Email</a>
+      <span>Email: <a href="mailto:qianzhao.wang@student.uni-tuebingen.de">qianzhao.wang@student.uni-tuebingen.de</a> <button type="button" class="copy" onclick="copyMail(this)">Copy</button></span>
       <a href="https://github.com/CLHITw">GitHub</a>
       <a href="https://www.linkedin.com/in/qianzhao-wang-39207138b/">LinkedIn</a>
     </div>
@@ -90,5 +92,10 @@ footer{margin-top:56px;color:var(--muted);font-size:13px}
 
 <footer>Last updated November 2026</footer>
 </main>
+<script>
+function copyMail(b){var m='qianzhao.wang@student.uni-tuebingen.de';
+function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)}
+if(navigator.clipboard){navigator.clipboard.writeText(m).then(done,function(){prompt('Email',m)})}else{prompt('Email',m)}}
+</script>
 </body>
 </html>
